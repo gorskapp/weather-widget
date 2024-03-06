@@ -1,0 +1,30 @@
+.container {
+  font-family:'Courier New', Courier, monospace;
+  width: fit-content;
+  height: 10rem;
+  padding: 10px;
+  margin: auto;
+  border-style: groove;
+}
+.city-container {
+  text-align: center;
+  float: left;
+  margin: 0.5rem;
+}
+.name {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.temp {
+  font-weight: bold;
+}
+.link {
+  text-decoration: underline;
+}
+

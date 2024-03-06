@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="city-container">
+    <ng-container *ngIf="weatherWarszawa">
+      <p class="name">{{weatherWarszawa.name}}</p>
+      <p class="temp">{{weatherWarszawa.main.temp}}℃</p>
+      <div *ngFor="let item of weatherWarszawa.weather">
+        <span class="description">{{item.description}}</span>
+      </div>
+    <a class="link" (click)="goToDetails(weatherWarszawa.id)">See more</a>
+    </ng-container>
+  </div>
+
+  <div class="city-container">
+    <ng-container *ngIf="weatherLodz">
+      <p class="name">{{weatherLodz.name}}</p>
+      <p class="temp">{{weatherLodz.main.temp}}℃</p>
+      <div *ngFor="let item of weatherLodz.weather">
+        <span class="description">{{item.description}}</span>
+      </div>
+    <a class="link" (click)="goToDetails(weatherLodz.id)">See more</a>
+    </ng-container>
+  </div>
+
+  <div class="city-container">
+    <ng-container *ngIf="weatherBerlin">
+      <p class="name">{{weatherBerlin.name}}</p>
+      <p class="temp">{{weatherBerlin.main.temp}}℃</p>
+      <div *ngFor="let item of weatherBerlin.weather">
+        <span class="description">{{item.description}}</span>
+      </div>
+    <a class="link" (click)="goToDetails(weatherBerlin.id)">See more</a>
+    </ng-container>
+  </div>
+
+  <div class="city-container">
+    <ng-container *ngIf="weatherNY">
+      <p class="name">{{weatherNY.name}}</p>
+      <p class="temp">{{weatherNY.main.temp}}℃</p>
+
+      <div *ngFor="let item of weatherNY.weather">
+        <span class="description">{{item.description}}</span>
+      </div>
+    <a class="link" (click)="goToDetails(weatherNY.id)">See more</a>
+    </ng-container>
+  </div>
+
+  <div class="city-container">
+    <ng-container *ngIf="weatherLondon">
+      <p class="name">{{weatherLondon.name}}</p>
+      <p class="temp">{{weatherLondon.main.temp}}℃</p>
+      <div *ngFor="let item of weatherLondon.weather">
+        <span class="description">{{item.description}}</span>
+      </div>
+    <a class="link" (click)="goToDetails(weatherLondon.id)">See more</a>
+    </ng-container>
+  </div>
+</div>
